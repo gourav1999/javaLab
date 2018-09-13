@@ -9,6 +9,6 @@ public class program
 		*/
 		boolean is_divisible_by_4_and_not_by_100 = (year%4==0 && year%100!=0);
 		boolean divisible_by_400 = (year%400==0);
-		//return (is_divisible_by_4_and_not_by_100 || divisible_by_400);
+		return (is_divisible_by_4_and_not_by_100 || divisible_by_400);
 	}
 }
