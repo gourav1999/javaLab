@@ -1,3 +1,4 @@
+import java.lang.Math;
 public class program
 {
 	public float[] test(int b, int c)
@@ -10,6 +11,13 @@ public class program
 		element should be the first element of the array
 		*/
 		float ret[] = {1.0f,2.0f};
+
+		ret[0] = ((-b - Math.round((Math.sqrt(b*b - 4*c))*10.0/10.0))/2);
+		ret[1] = ((-b + Math.round((Math.sqrt(b*b - 4*c))*10.0/10.0))/2);
 		return ret;
+	}
+	 public static void main(String[] args) {
+		program o1 = new program();
+		System.out.println(o1.test(5,3));
 	}
 }
