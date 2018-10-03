@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class program
 {
 	public float test(int numbers[])
@@ -8,5 +10,25 @@ public class program
 		average is 4.25. Please note that if the array has no elements, the average should
 		be 0.
 		*/
+        float sum=0;
+		for(float num: numbers)
+	    {
+			sum += num;
+		}
+		return sum/numbers.length;
+	} 
+ 
+	public static void main(String args[])
+	{
+		program o1 = new program();
+		int[] a = {3,3};
+		if(a.length==0)
+		{
+			System.out.println("0");
+		}
+		else
+		{
+			System.out.println(o1.test(a));
+		}
 	}
 }
